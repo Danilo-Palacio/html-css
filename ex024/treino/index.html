@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste de iframe</title>
+    <style>
+        body{
+            font-family: arial;
+            background-image: url(imagens/depositphotos_75232997-stock-photo-blue-stage-light-as-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            display: block;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px auto;
+            text-align: center;
+        }
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            column-gap: 50px;
+        }
+        li{
+            color: white;
+            font-weight: 700;
+            background-color:peru ;
+            padding: 10px 20px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px black;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            width: 353px;
+        }
+        img{
+            display: block;
+            width: 610px;
+            margin: auto;
+            clip-path: inset(20px 20px 37px 20px);
+        }
+        div{
+            position: absolute;
+            width: 353px;
+            height: 268px;
+            border: 1px solid white;
+            top: 27%;
+            left: 16%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha a tela ai</h1>
+
+    <img src="imagens/aedf3f29bf600e4658c3582222c5648b.jpg" alt="">
+
+    <div>
+        <iframe name="frame" src="" frameborder="0" width="353px" height="268px"></iframe>
+    </div>
+
+    <ul>
+        <li type="none" ><a target="frame" href="https://memoriadatv.com.br/hf-conteudo/uploads/posts/2020/08/ag_914_programa-silvio-santos-jpg.jpg">Canal 1</a></li>
+        <li type="none" ><a target="frame" href="https://memoriadatv.com.br/hf-conteudo/uploads/posts/2021/08/ag_3784_00000xresdefault-jpg.jpg">Canal 2</a></li>
+        <li type="none" ><a target="frame" href="https://i.ytimg.com/vi/-x9GdQASNM0/mqdefault.jpg">Canal 3</a></li>
+    </ul>
+
+</body>
+</html>
