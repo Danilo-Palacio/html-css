@@ -19,21 +19,20 @@
        
     </header>
    <main>
-        <aside class="container">
-            <div id="meme">
+        <aside class="container" >
+            <div id="photo-download">
                 <textarea class="tg-cima" name="" placeholder="Digite seu meme"aria-multiline="true"></textarea>
-                <div class="imagem"></div>
+                <div id="display-image"></div>
                 <textarea class="tg-baixo" name=""placeholder="Digite seu meme"aria-multiline="true"></textarea>
             </div>
 
             <div id="botoes">
                 <div id="escolha-imagens">
-                    <select>
-                        <option value="1">selecione imagens salvas</option>
-                    </select>
+                    <select id="memes-list"
+                    onchange="changeMemePicture(this.value)"></select>
                     <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
                 </div>
-                <button class="download">
+                <button class="download" id="download">
                     <a href="#"><img src="imagens/btn_download.svg" alt=""></a>
                 </button>
             </div>
@@ -56,5 +55,22 @@
             <p id="creditos">Projeto feito na live da <br><a href="https://www.dio.me/" target="_blank" ><img src="imagens/diome-white.png" alt=""></a><br><a href="#">#maquinadememes</a></p>
         </div>
    </footer>
+
+   <script src="./javascript/scripts.js"></script>
+   <script src="./javascript/html2canvas.js"></script>
+   <script>
+
+    document.getElementById("download").onclick = () => {
+    const screenshotPrint = document.querySelector("#photo-download")
+    html2canvas(screenshotPrint).then((canvas)=> {
+        const base64Image = canvas.toDataURL("image/png")
+        let anchor = document.createElement("a")
+        anchor.setAttribute("href",base64Image)
+        anchor.setAttribute("download", "my-meme.png")
+        anchor.click()
+        anchor.remove()
+        })
+}
+   </script>
 </body>
 </html>
