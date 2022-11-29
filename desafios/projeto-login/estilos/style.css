@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#principal{
+    width: 100vw;
+    height: 100vh;
+
+    border: 1px solid red;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: gray;
+}
+#imagem{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background-image: url(../imagens/medio.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+#login{
+    
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    
+    text-align: center;
+}
+
+p, h1{
+    padding: 10px;
+}
+#formulario{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
