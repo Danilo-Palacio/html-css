@@ -1,45 +1,53 @@
 @charset "UTF-8";
 
+/*      Paleta de cores
+        verde: #49a09d
+        lilas: #5f2c82
+*/
+
+:root{
+    --verde: #49a09d ;
+    --lilas: #5f2c82 ;
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
-#principal{
+#viewport{
     width: 100vw;
     height: 100vh;
 
-    border: 1px solid red;
     display:flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    background-color: gray;
+    background-color: var(--lilas);
+    
+}
+#tela{
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    overflow: hidden;
 }
 #imagem{
-    width: 300px;
-    height: 300px;
-    border: 1px solid red;
+    width: 250px;
+    height: 250px;
     background-image: url(../imagens/medio.jpg);
     background-position: center center;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px;
 
 }
 #login{
     
     background-color: white;
-    width: 300px;
-    height: 300px;
-    border: 1px solid red;
-    
-    text-align: center;
-
-    
-    border-radius: 0px 0px 20px 20px;
+    width: 250px;
+    height: 250px;
+        text-align: center;    
 }
 
 p, h1{
