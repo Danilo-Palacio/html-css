@@ -48,6 +48,19 @@ Grandes Telas: acima de 1200px
         flex-direction: column;
         justify-content: center;
     }
+    #botoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .entrar, .botao-esqueci-senha{
+        max-width: 170px;
+        margin: 0px;
+    }
+
 }
 @media screen and (min-width: 992px){
 
@@ -71,7 +84,9 @@ Grandes Telas: acima de 1200px
         
         height: 100%;
         width: 50%;
-        }
+    }
+
+    
     #formulario{
                 
         height: 100%;        
@@ -81,6 +96,18 @@ Grandes Telas: acima de 1200px
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    #botoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .entrar, .botao-esqueci-senha{
+        max-width: 170px;
+        margin: 0px;
     }
     
 }
