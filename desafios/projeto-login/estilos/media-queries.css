@@ -34,7 +34,6 @@ Grandes Telas: acima de 1200px
         justify-content: center;
     }
     #imagem{
-        
         height: 100%;
         width: 30%;
         }
@@ -52,12 +51,11 @@ Grandes Telas: acima de 1200px
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 10px;
         margin-top: 50px;
     }
-    .entrar, .botao-esqueci-senha{
-        max-width: 170px;
+    .entrar,.botao-esqueci-senha{
         margin: 0px;
     }
 
@@ -86,7 +84,7 @@ Grandes Telas: acima de 1200px
         width: 50%;
     }
 
-    
+
     #formulario{
                 
         height: 100%;        
