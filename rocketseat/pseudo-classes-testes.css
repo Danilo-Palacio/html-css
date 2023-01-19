@@ -64,3 +64,24 @@ li{
 .display{
     display: flex;
 }
+
+:root {
+    --black: #000000;
+    --red: #C51E14;
+    --green: #117213;
+    --yellow: #C7C329;
+    --blue: #0A2FC4;
+    --magenta: #C839C5;
+    --cyan: #20C5C6;
+    --white: #C7C7C7;
+    --lightBlack:#686868;
+    --lightRed: #FD6F6B;
+    --lightGreen: #3a943f;
+    --lightYellow: #FFFA72;
+    --lightBlue: #6A76FB;
+    --lightMagenta: #FD7CFC;
+    --lightCyan: #68FDFE;
+    --lightWhite: #FFFFFF;
+    --limeGreen: #32CD32;
+    --lightCoral: #F08080;
+},
